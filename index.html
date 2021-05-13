@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/css/uikit.min.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    
+    <title>Church Scheduler</title>
+</head>
+<body>
+    <section class="top-container">
+        <div class="title">
+            <h1>Welcome to Church</h1>
+            <input type="button" value="Check Schedule" id="btn-check" class="uk-button uk-button-default" >
+            <input type="button"  value="Sign Up" id="btn-check1" class="uk-button uk-button-default" href="#modal-sections" uk-toggle>
+            <div id="modal-sections" uk-modal>
+                <div class="uk-modal-dialog">
+                    <button class="uk-modal-close-default" type="button" uk-close></button>
+                    <div class="uk-modal-header">
+                        <h2 class="uk-modal-title">Enter information here:</h2>
+                    </div>
+                    <div class="uk-modal-body">
+                       <label for="fname">First Name: </label><input type="text" id="fname"><br>
+                       <label for="role">Role: </label><input type="text" id="role"><br>
+    
+                    </div>
+                    <div class="uk-modal-footer uk-text-right">
+                        <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
+                        <button class="uk-button uk-button-primary" type="button">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <section class="middle-container">
+
+        <h1 class="schedule">Church Schedule</h1>
+
+        
+    </section>
+    
+    <section class="footer-container">
+
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit-icons.min.js"></script>    
+</body>
+
+</html>
