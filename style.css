@@ -87,6 +87,33 @@
     height: 20px;
     margin-top: 20px;
 }
+table {
+    border-collapse: collapse;
+    width: 100%;
+    height: auto;
+    empty-cells: hide;
+    min-width: 500px;
+}
+table thead th{
+    padding: 20px 0;
+}
+table thead tr{
+    background-color: rgb(155, 109, 10);
+    color: white;
+}
+tbody{
+    text-align: center;
+}
+tbody tr{
+    border-bottom: 1px solid black;
+}
+tbody tr h3{
+    color: black;
+    font-size: 1.3em;
+}
+table tbody td{
+    padding: 15px 0;
+}
 
 @media screen and (max-width: 1000px) {
     #btn-check1 {

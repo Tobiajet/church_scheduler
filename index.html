@@ -25,12 +25,18 @@
                     </div>
                     <div class="uk-modal-body">
                        <label for="fname">First Name: </label><input type="text" id="fname"><br>
-                       <label for="role">Role: </label><input type="text" id="role"><br>
+                       <label for="role">Role: </label>
+                       <select id="role">
+                        <option value="prayer">Prayer</option>
+                        <option value="Praise and Worship">Praise and Worship</option>
+                        <option value="Offering and Tithe">Offering and Tithe</option>
+                        <option value="Sermons and Benediction">Sermons and Benediction</option>
+                      </select><br>
     
                     </div>
                     <div class="uk-modal-footer uk-text-right">
                         <button class="uk-button uk-button-default uk-modal-close" type="button">Cancel</button>
-                        <button class="uk-button uk-button-primary" type="button">Submit</button>
+                        <button class="uk-button uk-button-primary " type="button" id="submit">Submit</button>
                     </div>
                 </div>
             </div>
@@ -41,14 +47,31 @@
 
     <section class="middle-container">
 
-        <h1 class="schedule">Church Schedule</h1>
+        <h1 class="schedule"></h1>
+        <button id="schedule">Schedule</button>
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Praying</th>
+                    <th>Praise & Worship</th>
+                    <th>Offering & tithes</th>
+                    <th>Sermons & benediction</th>
+                  </tr>
+            </thead>
+            <tbody class="tbody">
+                <tr class = "table-row">
+                    <td><h3 id="pray"></h3></td>
+                    <td><h3 id="praise"></h3></td>
+                    <td><h3 id="offering"></h3></td>
+                    <td><h3 id="sermon"></h3></td> 
+                </tr>
+            </tbody>
+        </table>
 
         
     </section>
     
-    <section class="footer-container">
-
-    </section>
+    <script src="app.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/uikit@3.6.21/dist/js/uikit-icons.min.js"></script>    
 </body>
